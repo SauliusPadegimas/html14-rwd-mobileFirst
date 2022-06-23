@@ -1,21 +1,29 @@
 /* Common HTML ============= */
 html {
-  font-size: 16px;
   /* del scroll */
   margin-bottom: 500px;
 }
 
+p {
+  font-size: 16px;
+}
 /* User cards++++++++++++++ */
 
-.u-card {
+.user-section {
+  background-color: snow;
+}
+.u-card,
+.icons-card {
   text-align: center;
   color: #999999;
   border-bottom: 1px solid tomato;
   border-bottom-color: inherit;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .u-card__image {
+  display: inline-block;
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -28,4 +36,109 @@ html {
 .u-card__title {
   font-weight: normal;
   font-size: 1.4rem;
+}
+
+.icons-card {
+  padding: 2rem 0 2rem 20%;
+  text-align: left;
+  border-bottom: none;
+}
+.icons-card_i {
+  font-size: 2em;
+}
+.cta-card {
+  text-align: center;
+  color: #999999;
+  border-top: 1px solid tomato;
+  border-top-color: inherit;
+  border-bottom: 1px solid tomato;
+  border-bottom-color: inherit;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.cta-card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cta-card__button_blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.cta-card__button_white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.cta-card_short-line {
+  max-width: 20%;
+  border-bottom: 1px solid black;
+  border-bottom-color: inherit;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 650px) {
+  .user-section {
+    padding: 0 6%;
+  }
+  .u-card {
+    text-align: left;
+    display: grid;
+    column-gap: 1.8rem;
+    grid-template-columns: 30% auto;
+  }
+  .u-card--rtl {
+    text-align: right;
+    grid-template-columns: auto 30%;
+  }
+
+  .u-card--rtl .u-card__image {
+    grid-column: 2 / 3;
+  }
+  .u-card--rtl .u-card__title {
+    grid-row: 1 / 2;
+  }
+
+  .u-card__image {
+    grid-row: span 2;
+    width: initial;
+    height: initial;
+    aspect-ratio: 1;
+  }
+  .u-card__title {
+    align-self: flex-end;
+  }
+
+  .icons-card {
+    padding: 2rem 0 2rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .cta-card__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cta-card .u-card__text {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }

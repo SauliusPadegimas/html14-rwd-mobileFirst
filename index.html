@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/rem.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>HTML 14 Mobile first</title>
   </head>
   <body>
@@ -14,7 +23,8 @@
     <!-- first-name - kebab-case -->
     <!-- first_name - snake_case -->
 
-    <section aria-label="user-cards" class="section user-cards container">
+    <section aria-label="user-cards" class="section user-section container">
+      <!-- U-CARD -->
       <div class="u-card">
         <img
           src="https://picsum.photos/id/1005/600/800"
@@ -27,6 +37,74 @@
           elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In
           convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
         </p>
+      </div>
+      <!-- /U-CARD -->
+      <!-- U-CARD -->
+      <div class="u-card u-card--rtl">
+        <img
+          src="https://picsum.photos/id/1012/800/600"
+          alt="paveikslelis"
+          class="u-card__image"
+        />
+        <h2 class="u-card__title">Some title Mobile</h2>
+        <p class="u-card__text">
+          Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum
+          elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In
+          convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
+        </p>
+      </div>
+      <!-- /U-CARD -->
+      <!-- U-CARD -->
+      <div class="u-card">
+        <img
+          src="https://picsum.photos/id/1018/600/800"
+          alt="paveikslelis"
+          class="u-card__image"
+        />
+        <h2 class="u-card__title">Some title Mobile</h2>
+        <p class="u-card__text">
+          Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum
+          elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In
+          convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
+        </p>
+      </div>
+      <!-- /U-CARD -->
+      <!-- icons-card -->
+      <div class="icons-card">
+        <p>
+          <i class="fa fa-camera-retro icons-card_i" aria-hidden="true"></i>
+          Ipsum lorem accumsan
+        </p>
+        <p>
+          <i class="fa fa-refresh icons-card_i" aria-hidden="true"></i> Sed
+          vehicula elementum
+        </p>
+        <p>
+          <i class="fa fa-cloud icons-card_i" aria-hidden="true"></i> Elit fusce
+          consequat
+        </p>
+        <p>
+          <i class="fa fa-refresh icons-card_i" aria-hidden="true"></i> Lorem
+          nullam tempus
+        </p>
+        <p>
+          <i class="fa fa-camera-retro icons-card_i" aria-hidden="true"></i>
+          Adipiscing amet sapien
+        </p>
+      </div>
+    </section>
+    <section class="cta-card section container">
+      <h2 class="u-card__title">Magna leo sapien gravida</h2>
+      <p class="u-card__text">
+        Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula
+        lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.
+      </p>
+      <div class="cta-card_short-line"></div>
+      <div class="cta-card__buttons">
+        <div class="cta-card__button_blue">
+          <i class="fa fa-download" aria-hidden="true"></i>Download
+        </div>
+        <div class="cta-card__button_white">Learn more</div>
       </div>
     </section>
   </body>
